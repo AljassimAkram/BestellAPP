@@ -1,0 +1,52 @@
+.logomenu{
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.logomenu:hover{
+    background-color: rgb(223, 166, 125);
+}
+.cart-item button {
+    margin: 0 5px;
+}
+.basket button {
+    width: 60%;
+    height: 24px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    border-color: bisque;
+    cursor: pointer;
+    font-weight: 700;
+}
+.basket button:hover{
+    background-color: rgb(250 165 102);
+}
+.fixed-button {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    width: 75%;
+}
+#toggleButton{
+    display: none;
+}
+
+.fixed-button:hover {
+    background-color: darkorange;
+}
+.price{
+    color:orange ;
+}
+

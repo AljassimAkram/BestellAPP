@@ -1,0 +1,55 @@
+
+@media (max-width:650px){
+    .basket_wrapper{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        background-color: white;
+    }
+    .basket {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .content {
+        width: calc(100%);
+
+    }
+    .fixed-button{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    h1{
+        font-size:8vw;
+    }
+    header{
+        gap: 8px;
+    }
+    .logoheader{
+        margin-left: 0;
+        height: 85px;
+    }
+    .logomenu{
+        margin-right: 0;
+    }
+    .menu{
+        gap: 8px;
+    }
+    .menuItems{
+        font-size:5vw;
+    }
+    .ItemsName{
+        gap: 8px;
+    }
+
+}
+@media (max-width: 1439px) {
+    .sympol {
+        left: 36px;
+    }
+}

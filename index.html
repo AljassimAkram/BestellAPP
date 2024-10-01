@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./assets/img/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestell App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/assets.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/standard.css" />
+    <script src="script.js"></script>
+    <script src="./script/object.js"></script>
+    <script src="./script/template.js"></script>
+  </head>
+  <body onload="initialize()">
+    <section class="background" ><header>
+      <img class="logoheader" src="./assets/img/header.png" alt="header" />
+      <h1>Speisekarte</h1>
+      <img class="logomenu" src="./assets/img/menu.png" alt="menu" />
+    </header></section>
+    <section class="background">
+      <div class="content_wrapper">
+        <section class="content" id="content">
+          <img class="pizzaImg" src="./assets/img/pizza.jpg" alt="Pizza" />
+          <img class="sympol" src="./assets/img/sympol.png" alt="sympol" />
+          <div class="menu">
+            <a href="#ordrPizza" class="menuItems">Pizza</a>
+            <a href="#ordrDoner" class="menuItems">Döner</a>
+            <a href="#ordrDrinks" class="menuItems">Getränke</a>
+          </div>
+          <h2>Pizza</h2>
+          <div id="ordrPizza">
+          </div>
+          <h2>Döner</h2>
+          <img class="donerImg" src="./assets/img/doner.jpg" alt="Doner" />
+          <div id="ordrDoner">
+          </div>
+          <h2>Getränke</h2>
+          <img
+            class="donerImg"
+            src="./assets/img/softDrink.jpg"
+            alt="drink"
+          />
+          <div id="ordrDrinks">
+          </div>
+        </section>
+        <section class="basket_wrapper" id="basket_wrapper">
+          <div class="basket">
+            <h2>Warenkorb</h2>
+            <div id="cartItems"></div>
+            <div id="totalPrice"></div>
+            <button onclick="order()">Bestellen</button>
+            <div id="orderModal" class="description-modal d-none" onclick="toggleOrderModal()">
+              <div class="modal-content" onclick="toggleOrderModal()">
+                <p id="orderMessage"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div
+      id="descriptionModal"
+      class="description-modal d-none"
+      onclick="toggleDeleteModal()"
+    >
+      <div class="modal-content" onclick="toggleDeleteModal()">
+        <div>
+          <p id="descriptionText"></p>
+        </div>
+      </div>
+    </div>
+    <button id="fixedButton" class="fixed-button" onclick="showBasket()">Warenkorb</button>
+    <button id="toggleButton" class="fixed-button" onclick="showBasket()">Warenkorb schließen</button>
+  </body>
+</html>
